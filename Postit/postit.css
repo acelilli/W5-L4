@@ -1,0 +1,55 @@
+body {
+  background-color: gray;
+  font-family: "Indie Flower", cursive;
+  font-size: 1.6em;
+}
+main {
+  max-width: 1250vh;
+  display: flex;
+  flex-direction: row;
+  flex-wrap: wrap;
+  justify-content: space-around;
+  max-width: 1250px;
+  margin-inline: auto;
+}
+
+h3 {
+  font-weight: 700;
+  font-size: 1.8em;
+  margin-bottom: 10px;
+}
+
+.boxgialli {
+  background-color: palegoldenrod;
+  transform: rotate(-5deg);
+}
+
+.boxverdi {
+  background-color: palegreen;
+  transform: rotate(6deg);
+}
+
+.boxviola {
+  background-color: plum;
+  transform: rotate(-5deg);
+}
+
+.boxgialli,
+.boxverdi,
+.boxviola {
+  width: 250px;
+  height: 200px;
+  margin: 30px;
+  cursor: pointer;
+  box-sizing: border-box;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  box-shadow: inset -5px -15px 25px rgba(0, 0, 0, 0.4), 5px 5px 5px rgba(0, 0, 0, 0.5);
+}
+
+div:hover {
+  transform: scale(1.25);
+  z-index: 10;
+}
